@@ -1,0 +1,145 @@
+*body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url();
+    background-position: center;
+    background-size: cover;
+    
+    position: relative;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    overflow: hidden;
+}
+
+.nav-links{
+    flex: 1;
+    list-style-type: none;
+    float: right;
+    
+}
+.nav-links ul li{
+    display: inline-block;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links li a{
+    text-decoration: none;
+    padding: 20px 35px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+}
+.nav-logo{
+    float: left;
+}
+.load{
+    animation: slide 4s;
+}
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 30s infinite;
+    
+}
+.content{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: (0,0,0,0.5);
+}
+.principal{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    letter-spacing: 5px;
+  text-align: center;
+}
+.principal h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.principal p{
+    font-size: 20px;
+}
+@keyframes slide {
+    0%{
+        background-image: url(background.jpg);
+    }
+    20%{
+        background-image: url(1.jpg);
+    }
+    20.01%{
+        background-image: url(1.jpg);
+    }
+    40%{
+        background-image: url(2.jpg);
+    } 
+    40.01%{
+        background-image: url(2.jpg);
+    }
+    60%{
+        background-image: url(3.jpg);
+    } 
+    60.01%{
+        background-image: url(3.jpg);
+    }
+    80%{
+        background-image: url(4.jpg);
+    }
+    80.01%{
+        background-image: url(4.jpg);
+    }
+    100%{
+        background-image: url(background.jpg);
+    }
+}
+
+.services .service-container {
+   background-image: url(logo.jpg);
+    padding: 50px;
+}
+
+.services .service-container:hover {
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(33, 33, 33, 1);
+    -moz-box-shadow: 0px 2px 9px -1px rgba(33, 33, 33, 1);
+    box-shadow: 0px 2px 9px -1px rgba(33, 33, 33, 1);
+}
+.services .service-container:hover h4 {
+    color: #FFF;
+    
+}
+.services .service-container h4{
+    color: yellow;
+}
+.services .service-container p{
+    color: #FFF;
+}
+.services .service-container .fas {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+}
